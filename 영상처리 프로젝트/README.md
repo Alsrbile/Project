@@ -13,9 +13,9 @@
 * 문제풀이
 
 <img src="https://user-images.githubusercontent.com/70309556/147243624-7a9c3d1f-9f45-4b4b-b9ed-3c248b19b095.png" width="360px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
--KLT Corner Detection으로 4개의 점 검출
--4개의 점을 Perspective 변해서 왜곡없게 만들기
--KNN 학습을 통해 유추한 값을 list로 제작. (빈 공간은 0으로 채움)
+-KLT Corner Detection으로 4개의 점 검출   
+-4개의 점을 Perspective 변해서 왜곡없게 만들기   
+-KNN 학습을 통해 유추한 값을 list로 제작. (빈 공간은 0으로 채움)   
 -list로 얻은 값을 풀어낸다. (재귀함수 이용)
 
 * 출력
