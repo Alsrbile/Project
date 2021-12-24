@@ -7,12 +7,19 @@
 #### 제작 방식
 * 데이터 제작
 
-<img src="https://user-images.githubusercontent.com/70309556/147243214-8949347f-5cdf-4ee0-8f21-c2adc2236cfc.png" width="360px" height="100px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
--임의의 글꼴 12개 사용
-
+<img src="https://user-images.githubusercontent.com/70309556/147243214-8949347f-5cdf-4ee0-8f21-c2adc2236cfc.png" width="360px" height="100px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>     
+##### 데이터 제작
+-임의의 글꼴 12개 사용   
+-zero padding으로 data 크기 통일   
+-np.vstack, np.hstack으로 data set 제작   
+-data 위치를 조정하면서 개수를 늘림. (Data Augmentation)
+     
+     
+     
 * 문제풀이
-
-<img src="https://user-images.githubusercontent.com/70309556/147243624-7a9c3d1f-9f45-4b4b-b9ed-3c248b19b095.png" width="360px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+  
+<img src="https://user-images.githubusercontent.com/70309556/147243624-7a9c3d1f-9f45-4b4b-b9ed-3c248b19b095.png" width="360px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>   
+##### 실시간 영상을 통해 퍼즐 검출
 -KLT Corner Detection으로 4개의 점 검출   
 -4개의 점을 Perspective 변해서 왜곡없게 만들기   
 -KNN 학습을 통해 유추한 값을 list로 제작. (빈 공간은 0으로 채움)   
@@ -20,5 +27,7 @@
 
 * 출력
 
-<img src="https://user-images.githubusercontent.com/70309556/147244236-d5a4913c-dc7d-44ea-820e-80159eea6be0.png" width="290px" height="260px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
--cv2.bitwise, cv2.add 연산으로 숫자를 이미지 위에 출력
+<img src="https://user-images.githubusercontent.com/70309556/147244236-d5a4913c-dc7d-44ea-820e-80159eea6be0.png" width="290px" height="260px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>     
+##### 출력 image 제작   
+-cv2.bitwise, cv2.add 연산으로 숫자를 이미지 위에 출력   
+-perspective image 위에 제작
